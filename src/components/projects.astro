@@ -1,0 +1,18 @@
+---
+import ProjectCard from './ProjectCard.astro';
+
+const projects = [
+  { title: "CRUD App", description: "App con JS" },
+  { title: "Landing", description: "Landing moderna" }
+];
+---
+
+<section id="projects">
+  <h2>Proyectos</h2>
+
+  {
+    projects.map(p => (
+      <ProjectCard {...p} />
+    ))
+  }
+</section>
