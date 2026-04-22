@@ -1,8 +1,9 @@
 <section class="hero" id="hero">
+
+  
   <div class="hero-content">
-    
     <h1>Hola, soy <span>Erick García</span></h1>
-    
+    <div class="hero-container">
     <h3>Frontend Developer Jr</h3>
 
     <p>
@@ -26,7 +27,7 @@
         <i class='bi bi-whatsapp'></i>
       </a>
     </div>
-
+    </div>
   </div>
 </section>
 
@@ -36,95 +37,40 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   padding: 4rem 2rem;
 }
 
-.hero-content {
-  max-width: 700px;
+/* CONTENEDOR PRINCIPAL */
+.hero-container {
+  width: 100%;
+  max-width: 800px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
-h1 {
-  font-size: 3rem;
+/* CONTENIDO */
+.hero-content h1 {
+  font-size: 2.8rem;
   margin-bottom: 1rem;
 }
 
-h1 span {
+.hero-content h1 span {
   color: var(--primary);
 }
 
-h3 {
+.hero-content h3 {
   color: var(--text-secondary);
   font-weight: 400;
   margin-bottom: 1rem;
 }
 
-p {
+.hero-content p {
   color: var(--text-secondary);
   margin-bottom: 2rem;
   line-height: 1.6;
-}
-
-/* SOCIAL ICONS */
-.social-media {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.social-media a {
-  width: 45px;
-  height: 45px;
-  border: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: 0.3s;
-  color: var(--text);
-}
-
-/* HOVER SOCIAL */
-.social-media a:hover {
-  background: var(--primary);
-  color: white;
-  transform: translateY(-3px);
-}
-
-/* BUTTONS */
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.btn,
-.btn-whatsapp {
-  padding: 0.7rem 1.2rem;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  transition: 0.3s;
-}
-
-/* PRIMARY BUTTON */
-.btn {
-  background: var(--primary);
-  color: white;
-}
-
-/* WHATSAPP */
-.btn-whatsapp {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* HOVER BUTTONS */
-.btn:hover,
-.btn-whatsapp:hover {
-  transform: translateY(-3px);
-  border-color: var(--primary);
 }
 </style>
