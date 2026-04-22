@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+section{
+    min-height: 100vh;
+    padding: 10rem 10% 2rem;  
+}
+
 body {
   background: var(--bg);
   color: var(--text);
